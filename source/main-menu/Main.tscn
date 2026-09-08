@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://ctyd01bv020i8"]
+
+[ext_resource type="Script" uid="uid://dgyiunebikbh8" path="res://source/main-menu/Main.gd" id="1_2uj2d"]
+[ext_resource type="Theme" uid="uid://c2kgsk4ffhbwo" path="res://source/resources/main_menu.theme" id="1_sc713"]
+[ext_resource type="PackedScene" uid="uid://dij5xr8swlfdx" path="res://source/main-menu/Background.tscn" id="2_depxw"]
+
+[node name="Main" type="Control" unique_id=329674755]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_sc713")
+script = ExtResource("1_2uj2d")
+
+[node name="Background" parent="." unique_id=1631449296 instance=ExtResource("2_depxw")]
+layout_mode = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=918944874]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 55.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1930016040]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1063204003]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Button" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1378407972]
+layout_mode = 2
+text = "PLAY"
+
+[node name="Button2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=787332775]
+layout_mode = 2
+text = "OPTIOMS"
+
+[node name="Button4" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1186476946]
+layout_mode = 2
+text = "QUIT"
+
+[node name="Label" type="Label" parent="." unique_id=1374743028]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 984.0
+offset_bottom = 67.0
+text = "спрайты не мои. я взял их с сайта kenney.nl
+и да русского языка в игре пока не будет (мне лень переводить свою же игру)"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/Button2" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/Button4" to="." method="_on_quit_button_pressed"]
