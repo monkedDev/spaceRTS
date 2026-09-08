@@ -1,6 +1,6 @@
 # spaceRTS
 
-![spaceRTS](./media/screenshots/screenshot_1400x650.png "Open RTS")
+![spaceRTS](./media/screenshots/screenshot_1400x650.png)
 
 Open Source real-time strategy game made with Godot 4.7
 
