@@ -1,8 +1,8 @@
-# Open RTS
+# spaceRTS
 
-![Open RTS](./media/screenshots/screenshot_1400x650.png "Open RTS")
+![spaceRTS](./media/screenshots/screenshot_1400x650.png)
 
-Open Source real-time strategy game made with Godot 4.
+Open Source real-time strategy game made with Godot 4.7
 
 ## Purposes of this project
 
@@ -18,7 +18,6 @@ This game is not going to be a very advanced RTS that would compete with other g
  - [x] terrain and air units
  - [x] deathmatch mode (human vs AI or AI vs AI)
  - [x] runtime player switching
- - [x] basic fog of war
  - [x] units disappearing in fog of war
  - [x] minimap
  - [x] swarm movement to position
@@ -26,16 +25,12 @@ This game is not going to be a very advanced RTS that would compete with other g
  - [x] simple UI
  - [ ] polished UI
  - [ ] sounds
- - [ ] music
+ - [ ] music (i first time added some music)
  - [ ] VFX
 
 ## Godot compatibility
 
-This project is compatible with Godot `4.3`.
-
- - support for Godot `4.2` is available on `godot-4.2-support` branch.
- - support for Godot `4.1` is available on `godot-4.1-support` branch.
- - support for Godot `4.0` is available on `godot-4.0-support` branch.
+This project is compatible with Godot `4.7`.
 
 ## Screenshots
 
@@ -51,12 +46,8 @@ Everyone is free to fix bugs or perform refactoring just by opening PR. As for f
 
 ## Credits
 
-### Core contributors
- - Pawel Lampe (Lampe Games)
- 
-### Contributors
-
-See [contributors](https://github.com/lampe-games/godot-open-rts/graphs/contributors) page.
+### Developers
+ - monkedDev
 
 ### Assets
  - 3D Space Kit by [Kenney](https://www.kenney.nl/assets/space-kit)
