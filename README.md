@@ -48,6 +48,7 @@ Everyone is free to fix bugs or perform refactoring just by opening PR. As for f
 
 ### Developers
  - monkedDev
+ ![monkedDev](./media/logos/monkeddev.mp4")
 
 ### Assets
  - 3D Space Kit by [Kenney](https://www.kenney.nl/assets/space-kit)
